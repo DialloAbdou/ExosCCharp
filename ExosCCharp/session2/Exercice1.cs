@@ -29,6 +29,23 @@ public class Exercice1
            var res = a % b;
            Console.WriteLine(res);
          }
-
+         
+        /// <summary>
+        /// Convertir un variable en un autre
+        /// de type
+        /// </summary>
+        /// <returns></returns>
+        public static Tuple<int, bool, string> GetConvert()
+        {
+            var myInt = "17";
+            var myBool = "False";
+            var myString = 100;
+            
+            var myIntConverted = int.Parse(myInt);
+            var myBoolConverted = bool.Parse(myBool);
+            var myStringConverted = myString.ToString();
+            return new Tuple<int, bool, string>
+                (myIntConverted, myBoolConverted, myStringConverted);
+         } 
 
 }
