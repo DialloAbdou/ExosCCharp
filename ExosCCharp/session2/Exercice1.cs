@@ -1,5 +1,5 @@
 namespace Namespace;
-public class Exercice2
+public class Exercice1
 {
         /// <summary>
         ///  Utilisation de Tuple
@@ -17,5 +17,18 @@ public class Exercice2
             return new Tuple<string, int, float,bool,string[]>
                 (name, age, (float) weight, isHuman, friends);
         }
+
+        /// <summary>
+        /// le caractere à modifier
+        /// pour une fonction qui fait du modulo
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+         public  static void ComputeAndDisplay(int a, int b)
+         {
+           var res = a % b;
+           Console.WriteLine(res);
+         }
+
 
 }
