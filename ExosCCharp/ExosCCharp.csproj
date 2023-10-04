@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="README.md\" />
+    <Folder Include="session2\" />
   </ItemGroup>
 
 </Project>
