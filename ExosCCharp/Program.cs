@@ -16,7 +16,7 @@ Exercice1.ComputeAndDisplay(21,21);
 Exercice1.ComputeAndDisplay(99,3);
 
 Console.WriteLine("Correction du problème de typage");
-
+// appelle de function Divide
 var divise = Exercice1.Divide(10,3);
 
 Console.WriteLine($"la division est : {divise}");
