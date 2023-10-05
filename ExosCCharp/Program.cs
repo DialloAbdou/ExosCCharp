@@ -24,3 +24,9 @@ Console.WriteLine($"la division est : {divise}");
 //condition qui vérifie l'age 
 
 Console.WriteLine($"condition qui vérifie l'âge: {Exercice1.CheckAge(17)}");
+
+//Le Jeu de FizzBuzz
+
+Console.WriteLine("le de FizzBuzz");
+
+Exercice1.fn_fizzbuzz();

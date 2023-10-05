@@ -1,3 +1,5 @@
+using System.Threading.Tasks.Dataflow;
+
 namespace Namespace;
 public class Exercice1
 {
@@ -90,5 +92,48 @@ public class Exercice1
             Console.WriteLine(message);
             return message;
         }
+        
+        /// <summary>
+        /// Le Jeu de FizzBuzz
+        /// </summary>
+          public static void fn_fizzbuzz() 
+          {
+            for(int i = 1; i <= 100; i++)
+            {
+                string resultat = "";
+                if(isDivisibleParTrois(i))
+                {
+                    resultat +="Fizz";
+                }
+                if(isDivisibleParCinq(i))
+                {
+                    resultat+="Buzz";
+                }
+                if(resultat == "")
+                {
+                    resultat = i.ToString();
+                }
 
+                Console.WriteLine(resultat);
+            }
+         }
+
+        /// <summary>
+        ///  divisible par 3
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+         private static bool isDivisibleParTrois(int i)
+         {
+             return (i %3 ==0);
+         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        private static bool isDivisibleParCinq(int i)
+        {
+            return (i% 5==0);
+        }
 }
