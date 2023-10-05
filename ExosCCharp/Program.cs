@@ -20,3 +20,7 @@ Console.WriteLine("Correction du problème de typage");
 var divise = Exercice1.Divide(10,3);
 
 Console.WriteLine($"la division est : {divise}");
+
+//condition qui vérifie l'age 
+
+Console.WriteLine($"condition qui vérifie l'âge: {Exercice1.CheckAge(17)}");

@@ -58,4 +58,37 @@ public class Exercice1
             return  (float) a / b;
         }
 
+        /// <summary>
+        /// Condition qui
+        /// </summary>
+        /// <param name="age"></param>
+        /// <returns></returns>
+        public static string CheckAge(int age)
+        {
+            // Ne pas toucher cette ligne.
+            string message = "";
+            if(age<18)
+            {
+                message = string.Format($"vous êtes mineur(e)");
+            }
+            if(age >=18 && age< 20)
+            {
+                message = string.Format($"vous êtes juste majeur(e)");
+
+            }
+
+            if(age >=20)
+            {
+                message = string.Format($"vous êtes majeur(e)");
+
+            }
+            // Ecrire la condition "if" qui permet de répondre à l'exercice.
+            // l'âge est stockée dans la variable "age".
+            // Vous devez enregistrer le message dans la variable "message".
+            
+            // Ne pas toucher ces lignes.
+            Console.WriteLine(message);
+            return message;
+        }
+
 }
