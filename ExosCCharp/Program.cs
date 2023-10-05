@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Diagnostics;
 using Namespace;
 
 Console.WriteLine("Hello, World!");
@@ -13,3 +14,9 @@ Console.WriteLine("===DisplayCompute===");
 Exercice1.ComputeAndDisplay(10,2);
 Exercice1.ComputeAndDisplay(21,21);
 Exercice1.ComputeAndDisplay(99,3);
+
+Console.WriteLine("Correction du problème de typage");
+
+var divise = Exercice1.Divide(10,3);
+
+Console.WriteLine($"la division est : {divise}");

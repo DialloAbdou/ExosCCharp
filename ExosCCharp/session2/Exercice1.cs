@@ -40,12 +40,22 @@ public class Exercice1
             var myInt = "17";
             var myBool = "False";
             var myString = 100;
-            
             var myIntConverted = int.Parse(myInt);
             var myBoolConverted = bool.Parse(myBool);
             var myStringConverted = myString.ToString();
             return new Tuple<int, bool, string>
                 (myIntConverted, myBoolConverted, myStringConverted);
          } 
+
+        /// <summary>
+        /// Problème de Typage
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        public static float Divide(int a, int b)
+        {
+            return  (float) a / b;
+        }
 
 }
