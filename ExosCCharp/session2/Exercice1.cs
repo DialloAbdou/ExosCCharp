@@ -78,7 +78,6 @@ public class Exercice1
                 message = string.Format($"vous êtes juste majeur(e)");
 
             }
-
             if(age >=20)
             {
                 message = string.Format($"vous êtes majeur(e)");
@@ -135,5 +134,16 @@ public class Exercice1
         private static bool isDivisibleParCinq(int i)
         {
             return (i% 5==0);
+        }
+
+        /// <summary>
+        ///  création d'un tableau
+        /// </summary>
+        /// <returns></returns>
+        public static string[] GetTabStr() {
+            
+           var foo =  new string[] {"127","True","Hello"};
+            
+            return foo;
         }
 }

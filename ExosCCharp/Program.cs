@@ -30,3 +30,11 @@ Console.WriteLine($"condition qui vérifie l'âge: {Exercice1.CheckAge(17)}");
 Console.WriteLine("le de FizzBuzz");
 
 Exercice1.fn_fizzbuzz();
+
+// Création d'un tableau
+var tab =  Exercice1.GetTabStr();
+Console.WriteLine(" Creation tableau");
+foreach( string t1 in tab)
+{
+    Console.WriteLine($"{t1}");
+}
