@@ -147,6 +147,10 @@ public class Exercice1
             return foo;
         }
 
+        /// <summary>
+        /// Modification d'un tableau
+        /// </summary>
+        /// <returns></returns>
          public static Tuple<string, string[]> UpdateTable(){
            var foo = new string[] {"Hello", "I", "Am", "Learning", "C#"};
            
@@ -156,4 +160,16 @@ public class Exercice1
            return new Tuple<string, string[]>
                 (cSharpString, foo);
         }
+
+        /// <summary>
+        ///  Creation d'une fonction 
+        ///  qui retourne un string
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public string SayHello( string name)
+        {
+            return $"Bonjour {name} !";
+        }
+
 }
