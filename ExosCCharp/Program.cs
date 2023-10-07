@@ -38,3 +38,8 @@ foreach( string t1 in tab)
 {
     Console.WriteLine($"{t1}");
 }
+
+// fonction string
+var bonjour = Exercice1.SayHello("Abdoou");
+
+Console.WriteLine(bonjour);

@@ -167,7 +167,7 @@ public class Exercice1
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public string SayHello( string name)
+        public static string SayHello( string name)
         {
             return $"Bonjour {name} !";
         }
