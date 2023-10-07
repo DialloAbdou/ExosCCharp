@@ -171,5 +171,18 @@ public class Exercice1
         {
             return $"Bonjour {name} !";
         }
+    /// <summary>
+    ///  rtetirer d'une chaine caractere
+    /// </summary>
+    /// <param name="chaine"></param>
+    /// <param name="indexe"></param>
+    /// <returns></returns>
+        public static string RemoveAtPosition (string chaine, int indexe)
+        {
+             indexe  = indexe<0 ?0:indexe;
+             indexe = indexe > chaine.Length ? chaine.Length-1:indexe;
+             return chaine.Remove(indexe,1);
+        
+        }
 
 }

@@ -27,9 +27,9 @@ Console.WriteLine($"condition qui vérifie l'âge: {Exercice1.CheckAge(17)}");
 
 //Le Jeu de FizzBuzz
 
-Console.WriteLine("le de FizzBuzz");
+// Console.WriteLine("le de FizzBuzz");
 
-Exercice1.fn_fizzbuzz();
+// Exercice1.fn_fizzbuzz();
 
 // Création d'un tableau
 var tab =  Exercice1.GetTabStr();
@@ -43,3 +43,6 @@ foreach( string t1 in tab)
 var bonjour = Exercice1.SayHello("Abdoou");
 
 Console.WriteLine(bonjour);
+
+var phrase = Exercice1.RemoveAtPosition("bonjour",1);
+Console.WriteLine(phrase);
