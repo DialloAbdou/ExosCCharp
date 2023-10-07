@@ -146,4 +146,14 @@ public class Exercice1
             
             return foo;
         }
+
+         public static Tuple<string, string[]> UpdateTable(){
+           var foo = new string[] {"Hello", "I", "Am", "Learning", "C#"};
+           
+            var cSharpString = foo[foo.Length-1];
+           //modifier le tableau foo pour remplacer "C#" par "Arrays"
+              foo[foo.Length-1] = "Arrays";
+           return new Tuple<string, string[]>
+                (cSharpString, foo);
+        }
 }
