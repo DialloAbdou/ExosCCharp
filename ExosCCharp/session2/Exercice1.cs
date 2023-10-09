@@ -185,4 +185,10 @@ public class Exercice1
         
         }
 
+         internal static void Open()
+         {
+            Console.WriteLine("The door is open.");
+         }
+        
+
 }

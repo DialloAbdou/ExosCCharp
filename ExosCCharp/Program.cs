@@ -46,3 +46,5 @@ Console.WriteLine(bonjour);
 
 var phrase = Exercice1.RemoveAtPosition("bonjour",1);
 Console.WriteLine(phrase);
+
+Exercice1.Open();
