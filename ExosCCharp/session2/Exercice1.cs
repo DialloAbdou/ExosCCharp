@@ -199,11 +199,11 @@ public class Exercice1
     public static void DisplayTriangle(int a)
     {
         int k = a;
-        int j = a; 
-        for(int i = 0; i< k; i++)
-        {  
-            
-            for(int t= 0; t<j; t++ )
+        int j = a;
+        for (int i = 0; i < k; i++)
+        {
+
+            for (int t = 0; t < j; t++)
             {
                 Console.Write(a);
             }
@@ -211,6 +211,19 @@ public class Exercice1
             j--;
         }
 
+    }
+
+    /// <summary>
+    /// 
+    // Utilisation de Linq
+    /// </summary>
+    /// <param name="arr"></param>
+    /// <param name="val"></param>
+    /// <returns></returns>
+    public static int CountLessThan(int[] arr, int val)
+    {
+        var res  = arr.Where(c=>c < val).Count();
+        return res;
     }
 
 }

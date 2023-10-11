@@ -50,3 +50,11 @@ Console.WriteLine(bonjour);
 // Exercice1.Open();
 Console.WriteLine("--Triangles de Chiffres --");
 Exercice1.DisplayTriangle(3);
+
+// Declaration d'un Tableau 
+
+int [] arr = new int []{1,2,3,4,5};
+Console.WriteLine("utilisation de Linq");
+var res = Exercice1.CountLessThan(arr,2);
+
+Console.WriteLine($"le resultat est {res}");
